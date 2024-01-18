@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+  <title>Seminar Evaluator -- making feedbacks easy</title>
+  <script src="assets\js\script.js"></script>
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  <script src="./assets/js/script.js" defer></script>
+  <meta name="title" content="Seminar Evaluator -- making feedbacks easy">
+
+
+  
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+ 
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  
+
+  <header class="header section" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="assets\images\logo.png" width="200" height="40" alt=" seminar evluator logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#future" class="navbar-link hover:underline" data-nav-link>Future plans</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#Developers" class="navbar-link hover:underline" data-nav-link>Developers</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#Technologies" class="navbar-link hover:underline" data-nav-link>Technologies</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="wrapper">
+
+        <button class="search-btn" aria-label="search" data-search-toggler>
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Search</span>
+        </button>
+
+        <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+          <span class="span one"></span>
+          <span class="span two"></span>
+          <span class="span three"></span>
+        </button>
+
+        <a href="#" class="btn">Login</a>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+ 
+  <div class="search-bar" data-search-bar>
+
+    <div class="input-wrapper">
+      <input type="search" name="search" placeholder="Search" class="input-field">
+
+      <button class="search-close-btn" aria-label="close search bar" data-search-toggler>
+        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+
+    <p class="search-bar-text">Please enter at least 3 characters</p>
+
+  </div>
+
+  <div class="overlay" data-overlay data-search-toggler></div>
+
+
+
+
+
+  <main>
+    <article>
+
+      
+
+      <section class="section hero" aria-label="home">
+        <div class="container">
+
+          <h1 class="h1 hero-title">
+            <strong class="strong">SEMINAR EVALUATOR.</strong> <br> making feedbacks easier with facial recognition
+          </h1>
+
+          <div class="wrapper">
+
+            <form class="newsletter-form">
+              <input type="text" id="text" placeholder="Enter Host Name" class="email-field" required>
+
+             <button   onclick="generateQRCode()"  class="btn">Generate</button>
+              </form>
+
+            <p class="newsletter-text">
+             Enter the host name to generate a link for the audience to join
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+
+      <section class="section featured" aria-label="featured post">
+        <div id= "future" class="container">
+
+          <p class="section-subtitle">
+             <strong class="strong">OUR FUTURE PLANS</strong>
+          </p>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 600;">
+                  <img src="assets\images\Google-Meet-Logo.jpg" width="500" height="600" loading="lazy"
+                    alt="New technology is not good or evil in and of itself" class="img-cover">
+
+               
+                </figure>
+
+                <div class="card-content">
+
+                 
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                     Integrating feedback technologyin online meetings
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    integrating the seminar evaluator in apps , such as gmeet , classroom , etc. 
+                    to get rating reviwes of various online sessions and classes for the purpose of dvelopment
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 600;">
+                  <img src="assets\images\laptop.jpg" width="500" height="600" loading="lazy"
+                    alt="It’s a new era in design, there are no rules" class="img-cover">
+
+                
+                </figure>
+
+                <div class="card-content">
+
+                  
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                     Integrating the seminar evaluator in webcams 
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                   Using the seminar evaluator in webcams with permission to monitor
+                   the audiences's reaction and get thier review for the seminar or 
+                   any other online session.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 600;">
+                  <img src="assets\images\seminar.jpg" width="500" height="600" loading="lazy"
+                    alt="seminar" class="img-cover">
+
+                 
+                </figure>
+
+                <div class="card-content">
+
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Offline Seminar or Sessions
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Using webcams on each person we can evaluate thier review for 
+                    offline seminar and any other sessions to get the actual feedback 
+                    via facial recognition.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 600;">
+                  <img src="assets\images\classroom.png" width="500" height="600" loading="lazy"
+                    alt="classroom" class="img-cover">
+
+                </figure>
+
+                <div class="card-content">
+
+              
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                     Integrating the system in classrooms
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                   using webcams and seminar evaluator during regular classes
+                   to keep track of their review on classes and adjusting classes to
+                   their reviews.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 600;">
+                  <img src="assets\images\speech.png" width="500" height="600" loading="lazy"
+                    alt="speech" class="img-cover">
+
+         
+                </figure>
+
+                <div class="card-content">
+
+                 
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Evaluating speech beforehand
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Using the system before international speeches to public
+                    audience to get their review on the speech 
+                    and making necessary changes,
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 600;">
+                  <img src="assets\images\analytics.png" width="500" height="600" loading="lazy"
+                    alt="analytics" class="img-cover">
+
+
+                </figure>
+
+                <div class="card-content">
+
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Analyzing each part of session,
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                   Can use analytics to evaluate reaction of audience in each
+                   part of the session and via graphs to better the seminar or speech
+                   at the minimal levels.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+    
+
+      <section class="section recent" aria-label="recent post">
+        <div id="Developers" class="container">
+
+          <div class="title-wrapper">
+
+            <h2 class="h2 section-title">
+               <strong class="strong">Meet Our Developers</strong>
+            </h2>
+
+            <div class="top-author">
+              <ul class="avatar-list">
+
+                <li class="avatar-item">
+                  <a href="#" class="avatar large img-holder" style="--width: 100; --height: 100;">
+                    <img src="assets\images\samarth.jpg" width="100" height="100" alt="top author" class="img-cover">
+                  </a>
+                </li>
+
+                <li class="avatar-item">
+                  <a href="#" class="avatar large img-holder" style="--width: 100; --height: 100;">
+                    <img src="assets\images\profile-pic (10).png" width="100" height="100" alt="top author" class="img-cover">
+                  </a>
+                </li>
+
+                <li class="avatar-item">
+                  <a href="#" class="avatar large img-holder" style="--width: 100; --height: 100;">
+                    <img src="assets\images\gufran.jpg" width="100" height="100" alt="top author" class="img-cover">
+                  </a>
+                </li>
+
+
+              </ul>
+
+              <span class="span">development team</span>
+            </div>
+
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="assets\images\gufranb.jpg" width="550" height="660" loading="lazy"
+                    alt="Creating is a privilege but it’s also a gift" class="img-cover">
+
+                 
+                </figure>
+
+                <div class="card-content">
+
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                     SYED GUFRAN HUSSAIN
+                    </a>
+                  </h3>
+
+                  <p class="card-text2">
+                   hi , i live in Lucknow and i am currently pursuing B.tech at BBDITM college. <br>
+                   I have done my 10th and 12th at Preston international academy .
+                   i have keen interest in technology and have developed this website to inrease
+                   my knowledge in html , css and java script.
+                  I plan on researching multiple languages such as tensorflow to get this development ahead.
+                  Thank you for using for website.
+
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="assets\images\IMG_2983.jpg" width="550" height="660" loading="lazy"
+                    alt="Being unique is better than being perfect" class="img-cover">
+
+                </figure>
+
+                <div class="card-content">
+
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      SHUBHANSHU SINGH FARTYAL
+                    </a>
+                  </h3>
+
+                  <p class="card-text2">
+                   BACKGROUND:
+
+- RESIDENCE: Presently residing in Lucknow, Uttar Pradesh.
+- HOMETOWN: Originally from the picturesque state of Uttarakhand.
+<br>
+EDUCATION:
+
+- SCHOOLING: Completed primary and secondary education at Rani Laxmi Bai Memorial School.
+- ACADEMIC EXCELLENCE: Achieved outstanding academic results with a 95% score in 10th grade and an impressive 96% in 12th grade.
+<br>
+CURRENT PURSUIT:
+
+- HIGHER EDUCATION: Currently enrolled in a Bachelor of Technology program, specializing in Artificial Intelligence and Machine Learning, at BBDITM, Lucknow.
+<br>
+PERSONAL QUALITIES:
+
+- SELF-MOTIVATED: I am intrinsically driven and self-motivated, consistently seeking opportunities for self-improvement.
+- PERSISTENCE: Known for my unwavering commitment to overcoming challenges and reaching goals.
+<br>
+ATTITUDE TOWARDS LEARNING:
+
+- CONTINUOUS LEARNING: I have a deep commitment to learning and make it a point to gain knowledge from both my seniors and juniors, valuing a diverse range of perspectives.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="assets\images\samarth2.jpg" width="550" height="660" loading="lazy"
+                    alt="Now we’re getting somewhere" class="img-cover">
+
+                 
+                </figure>
+
+                <div class="card-content">
+
+                
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                     SAMARTH NEGI
+                    </a>
+                  </h3>
+
+                  <p class="card-text2">
+                    My hometown is Lucknow, and I had completed my schooling with the CBSE board , by securing 91% in class 10 as well as in class 12 (PCM+computer science).
+
+                    Currently, I am pursuing BTech in department of CSE (AIML) from BBDITM (affiliated with AKTU) Lucknow UP along with it I have completed Java+DSA from Alpha Course by Apna college ,and currently I am improving my DSA skills..
+                    
+                    It is my passion to learn about the tech industry ( computer related stuff ) as well as I follow tech creators on YouTube to keep myself updated.
+                    
+                    That's why I aim to build a career in the technology sector in the near future..
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      
+
+      <section class="section recommended" aria-label="recommended post">
+        <div id="Technologies" class="container">
+
+          <p class="section-subtitle">
+            <strong class="strong">Technologies Used</strong>
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
+                  <img src="assets\images\html.png" width="300" height="360" loading="lazy"
+                    alt="html " class="img-cover">
+
+                 
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h5">
+                    <a href="https://en.wikipedia.org/wiki/HTML" class="card-title hover:underline">
+                     HTML</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
+                  <img src="assets\images\css.png" width="300" height="360" loading="lazy"
+                    alt="css" class="img-cover">
+
+                 
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h5">
+                    <a href="https://en.wikipedia.org/wiki/CSS" class="card-title hover:underline">
+                     CSS
+                    </a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
+                  <img src="assets\images\javascript.png" width="300" height="360" loading="lazy"
+                    alt="javascript " class="img-cover">
+
+                
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h5">
+                    <a href="https://en.wikipedia.org/wiki/JavaScript" class="card-title hover:underline">
+                     javascript
+                    </a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
+                  <img src="assets\images\dude.jpg" width="300" height="360" loading="lazy"
+                    alt="dudewhowacks " class="img-cover">
+
+             
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h5">
+                    <a href="https://github.com/justadudewhohacks" class="card-title hover:underline">
+                    face recognition api by <br>
+                    Vincent Mühler
+                    </a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
+                  <img src="assets\images\tensor.png" width="300" height="360" loading="lazy"
+                    alt="TENSORFLOW " class="img-cover">
+
+                  
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h5">
+                    <a href="https://www.tensorflow.org/" class="card-title hover:underline">
+                     TENSORFLOW
+                    </a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+           
+
+          </ul>
+
+        </div>
+       
+      </section>
+
+
+
+
+    
+
+      <section  id ="hehe" class="section newsletter">
+       
+
+         <div id="qrcode" ></div>
+        <h2 class="h2 section-title">
+        Scan the QR to join or
+        </h2>
+        
+
+        <form action="camera.html" class="newsletter-form">
+          <input   type="text" name="email_address" placeholder="Enter your name" required class="email-field">
+
+          <button type="submit" class="btn">JOIN</button>
+        </form>
+
+  
+        
+
+      </section>
+   
+    </article>
+  </main>
+
+
+
+
+
+
+  <footer class="footer">
+    <div id="answer" class="container">
+
+      <div  class="footer-top section">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="assets\images\logo.png" width="129" height="40" alt="Blogy logo">
+          </a>
+
+          <p class="footer-text">
+            SEMINAR EVALUATOR.
+            making feedbacks easier with facial recognition
+          </p>
+
+        </div>
+
+
+  </footer>
+
+
+
+</body>
+
+</html>

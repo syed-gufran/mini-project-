@@ -1,0 +1,35 @@
+ body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    canvas {
+      position: absolute;
+    }
+   
+    .end-camera-button {
+      position: fixed;
+      top: 100px;
+      right: 100px;
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid #000;
+      border-radius: 5px;
+      color: #fff;
+      background-color: #000;
+      transition: background-color 0.3s, color 0.3s;
+  }
+
+  .end-camera-button:hover {
+      background-color: red;
+      color: #000;
+  }
